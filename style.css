@@ -1,0 +1,333 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0.5%;
+}
+
+.hero{
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url('images/GYM.svg');
+    background-size: cover;
+    padding: 2% 4%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section img{
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 250px;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 100%;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section h2{
+    font-size: clamp(2rem, 2vw + 1rem, 3rem);
+    font-weight: bold;
+    text-align: center; 
+}
+
+section button{
+    background-color: transparent;
+    border: 2px solid #333;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin-top: 40px;    
+}
+
+section button:hover{
+    background-color: #333;
+    color: white;
+    transition: 0.3s;
+}
+
+.about{
+    padding: 8% 0;
+}
+
+.about p{
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    text-align: center;
+    margin: 0;
+}
+
+.trusted-by{
+    padding: 4% 2%;
+    background-color: black;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brands-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.brand-logo{
+    width: 125px;
+    height: auto;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.brand-logo:hover{
+    opacity: 1;
+}
+
+.trainings{
+    padding: 8% 0;
+}
+
+.programs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.program img{
+    width: 1240px;
+    max-width: 100%;
+    object-fit: cover;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.program{
+    position: relative;
+}
+
+.program-text{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    transform: translate(-10%, -70%);
+    color: white;
+}
+
+.program-text h3{
+    font-size: clamp(2rem, 2vw, 3rem);
+}
+
+
+.news-updates{
+    padding-bottom: 8%;
+}
+
+.news-updates p{
+    margin: 10px;
+}
+
+.news-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.news-img{
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+.news-title{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.news-type{
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+    font-weight: 600;
+}
+
+.date-comments{
+    font-size: 15px;
+    text-align: left;
+    color: rgb(155, 155, 155);
+}
+
+
+footer{
+    padding: 2% 8%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: rgb(15, 15, 15);
+}
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo{
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+
+
+footer .socialMedia-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 200px;
+}
+
+.socialMedia-icon, .youtube-icon, .menu-icon{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+.youtube-icon{
+    height: 35px;
+}
+
+.socialMedia-icon:hover{
+    opacity: 0.5;
+}
+
+.youtube-icon:hover{
+    opacity: 0.5;
+}
+
+.info-title{
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.info{
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.info:hover{
+    color: rgb(100, 100, 100);
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 800px){
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .socialMedia-icon, .youtube-icon{
+        display: none;
+    }
+
+    nav ul{
+        display: none;
+    }
+}

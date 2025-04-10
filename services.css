@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    color: white;
+    margin: 0;
+    padding: 0.5%;
+}
+
+.hero{
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url('images/pexels-photo-841130.jpeg');
+    background-size: cover;
+    padding: 2% 4%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section img{
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 250px;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 100%;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+.socialMedia-icon, .youtube-icon, .menu-icon{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+.youtube-icon{
+    height: 35px;
+}
+
+.socialMedia-icon:hover,
+.youtube-icon:hover{
+    opacity: 0.2;
+}
+
+.service-type{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 5% 20%;
+}
+
+.service img{
+    width: 100%;
+    max-width: 100px;
+    filter: brightness(0) invert(0.9);
+}
+
+.service{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+@media (min-width: 800px){
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .socialMedia-icon, .youtube-icon{
+        display: none;
+    }
+
+    nav ul{
+        display: none;
+    }
+}

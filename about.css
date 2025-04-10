@@ -1,0 +1,361 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(242, 242, 250);
+    color: #333;
+    margin: 0;
+    padding: 0.5%;
+}
+
+.hero{
+    max-width: 100%;
+    min-height: 100vh;
+    background-image: url('images/gym-image.webp');
+    background-size: cover;
+    padding: 2% 4%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hero header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-section img{
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 250px;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    max-width: 250px;
+    width: 100%;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 400px;
+    width: 100%;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+}
+
+nav ul li a:hover{
+    color: white;
+}
+
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s;
+}
+
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+.socialMedia-icon, .youtube-icon{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+.youtube-icon{
+    height: 35px;
+}
+
+.socialMedia-icon:hover{
+    opacity: 0.2;
+}
+
+.youtube-icon:hover{
+    opacity: 0.2;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-content h2{
+    font-size: clamp(4rem, 8vw + 1rem, 14rem);
+    font-weight: bold;
+    text-align: center;
+    color: rgb(250, 250, 250);
+}
+
+.hero-content p{
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    line-height: 1.5;
+    color: white;
+}
+
+section{
+    padding: 6% 10%;
+}
+
+section h2{
+    font-size: clamp(2rem, 2vw + 1rem, 3rem);
+    font-weight: bold;
+    text-align: center; 
+}
+
+section p{
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    line-height: 1.5;
+}
+
+.team-members{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.team-member-img{
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.teamMember-name{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.teamMember-position{
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(155, 155, 155);
+}
+
+.icon-socialMedia{
+    width: 20px;
+    filter: brightness(0) invert(0.5);
+}
+
+.icon-socialMedia:hover{
+    filter: brightness(0) invert(0);
+}
+
+.socialMedia-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100px;
+}
+
+section h4{
+    font-size: clamp(1.5rem, 1vw + 1rem, 2rem);
+    font-weight: bold; 
+    margin: 0;
+}
+
+.about p{
+    font-size: clamp(1rem, 1.2vw, 2rem);
+    line-height: 1.5;
+    text-align: center;
+}
+
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+}
+
+.about-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+
+.about-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;    
+}
+
+.about-form h3{
+    font-size: clamp(1.5rem, 1vw + 1rem, 2rem);
+    font-weight: bold; 
+    text-align: center;
+}
+
+.about-form form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-form form input{
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.about-form form button{
+    background-color: #333;
+    border: solid 2px #333;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+.about-form form button:hover{
+    background-color: transparent;
+    color: #333;
+    transition: 0.3s;
+}
+
+footer{
+    padding: 2% 8%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgb(15, 15, 15);
+}
+
+.footer-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo{
+    width: 100%;
+    max-width: 150px;
+    cursor: pointer;
+}
+
+
+
+footer .socialMedia-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 200px;
+}
+
+.socialMedia-icon, .youtube-icon, .menu-icon{
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    filter: brightness(0) invert(1);
+}
+
+.youtube-icon{
+    height: 35px;
+}
+
+.socialMedia-icon:hover{
+    opacity: 0.2;
+}
+
+.youtube-icon:hover{
+    opacity: 0.2;
+}
+
+.title{
+    color: whitesmoke;
+    font-size: clamp(24px, calc(1vw + 1rem), 40px);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.info-title{
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+.info{
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.info:hover{
+    color: rgb(100, 100, 100);
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (min-width: 800px){
+    .menu-icon{
+        display: none;
+    }
+}
+
+@media (max-width: 800px){
+    .socialMedia-icon, .youtube-icon{
+        display: none;
+    }
+
+    nav ul{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .about-content{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }    
+}
