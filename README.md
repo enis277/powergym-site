@@ -12,7 +12,7 @@ Blog: Fitness tips and news for users.
 Responsive Design: Fully responsive for mobile and desktop use.
 
 Demo
-You can view a live demo of the website [here](URL to demo or hosted version).
+You can view a live demo of the website [here]([URL to demo or hosted version](https://enis277.github.io/powergym-site/)).
 
 Technologies Used
 Frontend: HTML, CSS.
