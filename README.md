@@ -23,7 +23,7 @@ This is a Gym Website project that provides users with an interactive platform t
 
 ## 🚀 Demo
 
-You can view a live demo of the website [here](URL to demo or hosted version).
+You can view a live demo of the website [here](https://enis277.github.io/powergym-site/).
 
 ---
 
