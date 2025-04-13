@@ -1,18 +1,33 @@
-# Gym Website
-Description:
-This is a Gym Website project that provides users with an interactive platform to explore gym services, view classes, and more. The website includes features such as a schedule of classes and a blog for health and fitness tips.
+# 🏋️‍♂️ Gym Website
 
-Features:
-Class Schedule: View available gym classes, timings, and instructors.
+**Description:**  
+This is a Gym Website project that provides users with an interactive platform to explore gym services, view class schedules, and access health and fitness tips through a dedicated blog.
 
-Membership: Users can sign up for different membership plans.
+---
 
-Blog: Fitness tips and news for users.
+## 🔥 Features
 
-Responsive Design: Fully responsive for mobile and desktop use.
+- **Class Schedule:**  
+  View available gym classes along with their timings and instructors.
 
-Demo:
-You can view a live demo of the website [here]([URL to demo or hosted version](https://enis277.github.io/powergym-site/)).
+- **Membership:**  
+  Users can sign up for different membership plans.
 
-Technologies Used:
-Frontend: HTML, CSS.
+- **Blog:**  
+  Stay updated with fitness tips and the latest news.
+
+- **Responsive Design:**  
+  Fully optimized for both mobile and desktop devices.
+
+---
+
+## 🚀 Demo
+
+You can view a live demo of the website [here](URL to demo or hosted version).
+
+---
+
+## 🛠 Technologies Used
+
+- **Frontend:** HTML, CSS
+
